@@ -34,9 +34,11 @@ Note: resources have relations. For example: movie has genre, rental has movie a
 ## Routes
 POST /api/auth – store management login (token will be sent in response)
 
+
 POST /api/users – store management registration (token will be sent in response header x-auth-token)
 
 GET /api/users/me  -  current user (Protected route. Request header x-auth-token should have correct token)
+
 
 GET /api/genres
 
@@ -48,6 +50,7 @@ PUT /api/genres/:id (Protected route. Request header x-auth-token should have co
 
 DELETE /api/genres/:id  (Protected route. Store management administrator only)
 
+
 GET /api/movies
 
 GET /api/movies/:id
@@ -57,6 +60,7 @@ POST /api/movies (Protected route. Request header x-auth-token should have corre
 PUT /api/movies/:id (Protected route. Request header x-auth-token should have correct token)
 
 DELETE /api/movies/:id (Protected route. Request header x-auth-token should have correct token)
+
 
 GET /api/customers
 
@@ -68,11 +72,13 @@ PUT /api/customers/:id (Protected route. Request header x-auth-token should have
 
 DELETE /api/customers/:id (Protected route. Request header x-auth-token should have correct token)
 
+
 GET /api/rentals
 
 GET /api/rentals/:id
 
 POST /api/rentals (Protected route. Request header x-auth-token should have correct token)
+
 
 POST /api/returns (Protected route. Request header x-auth-token should have correct token)
 
