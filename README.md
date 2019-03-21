@@ -32,14 +32,15 @@ ES6 JavaScript, Node.js, Express.js, MongoDB, JWT, Git, Heroku
 Note: resources have relations. For example: movie has genre, rental has movie and customer. 
 
 ## Routes
+1. 
 POST /api/auth – store management login (token will be sent in response)
 
-
+2.
 POST /api/users – store management registration (token will be sent in response header x-auth-token)
 
 GET /api/users/me  -  current user (Protected route. Request header x-auth-token should have correct token)
 
-
+3. 
 GET /api/genres
 
 GET /api/genres/:id  
@@ -50,7 +51,7 @@ PUT /api/genres/:id (Protected route. Request header x-auth-token should have co
 
 DELETE /api/genres/:id  (Protected route. Store management administrator only)
 
-
+4. 
 GET /api/movies
 
 GET /api/movies/:id
@@ -61,7 +62,7 @@ PUT /api/movies/:id (Protected route. Request header x-auth-token should have co
 
 DELETE /api/movies/:id (Protected route. Request header x-auth-token should have correct token)
 
-
+5. 
 GET /api/customers
 
 GET /api/customers/:id
@@ -72,14 +73,14 @@ PUT /api/customers/:id (Protected route. Request header x-auth-token should have
 
 DELETE /api/customers/:id (Protected route. Request header x-auth-token should have correct token)
 
-
+6. 
 GET /api/rentals
 
 GET /api/rentals/:id
 
 POST /api/rentals (Protected route. Request header x-auth-token should have correct token)
 
-
+7. 
 POST /api/returns (Protected route. Request header x-auth-token should have correct token)
 
 ## Test Code Coverage
