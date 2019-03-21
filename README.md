@@ -15,12 +15,18 @@ ES6 JavaScript, Node.js, Express.js, MongoDB, JWT, Git, Heroku
 -	Test-driven development (TDD)
 
 ## Resources
-/api/auth 
+/api/auth
+
 /api/users
+
 /api/genres
+
 /api/movies
+
 /api/customers
+
 /api/rentals
+
 /api/returns
 
 Note: resources have relations. For example: movie has genre, rental has movie and customer. 
@@ -29,28 +35,43 @@ Note: resources have relations. For example: movie has genre, rental has movie a
 POST /api/auth – store management login (token will be sent in response)
 
 POST /api/users – store management registration (token will be sent in response header x-auth-token)
+
 GET /api/users/me  -  current user (Protected route. Request header x-auth-token should have correct token)
 
-GET /api/genres  
+GET /api/genres
+
 GET /api/genres/:id  
+
 POST /api/genres  (Protected route. Request header x-auth-token should have correct token)
+
 PUT /api/genres/:id (Protected route. Request header x-auth-token should have correct token)
+
 DELETE /api/genres/:id  (Protected route. Store management administrator only)
 
 GET /api/movies
+
 GET /api/movies/:id
+
 POST /api/movies (Protected route. Request header x-auth-token should have correct token)
+
 PUT /api/movies/:id (Protected route. Request header x-auth-token should have correct token)
+
 DELETE /api/movies/:id (Protected route. Request header x-auth-token should have correct token)
 
 GET /api/customers
+
 GET /api/customers/:id
+
 POST /api/customers (Protected route. Request header x-auth-token should have correct token)
+
 PUT /api/customers/:id (Protected route. Request header x-auth-token should have correct token)
+
 DELETE /api/customers/:id (Protected route. Request header x-auth-token should have correct token)
 
 GET /api/rentals
+
 GET /api/rentals/:id
+
 POST /api/rentals (Protected route. Request header x-auth-token should have correct token)
 
 POST /api/returns (Protected route. Request header x-auth-token should have correct token)
