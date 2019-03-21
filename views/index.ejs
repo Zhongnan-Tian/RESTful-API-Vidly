@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
+    />
+    <title>RESTful API - Vidly</title>
+  </head>
+
+  <body>
+    <div class="container py-5">
+      <h1 class="text-center mb-3">Welcome!</h1>
+      <div>
+        <h4 class="mb-3 text-center">
+          This is a fast, scalable and secure REST API for a video rental
+          application.
+        </h4>
+
+        <h3>Tech Used</h3>
+        <hr />
+        <p>ES6 JavaScript, Node.js, Express.js, MongoDB, JWT, Git, Heroku</p>
+        <br />
+
+        <h3>Features</h3>
+        <hr />
+        <ul>
+          <li>Implement CRUD operations</li>
+          <li>Store complex data in MongoDB</li>
+          <li>Authenticatio and authorization</li>
+          <li>Data validation</li>
+          <li>Handle and log errors</li>
+          <li>Unit and integration tests</li>
+          <li>Test-driven development (TDD)</li>
+        </ul>
+        <br />
+
+        <h3>Resources</h3>
+        <hr />
+        <div>
+          <p>/api/auth</p>
+
+          <p>/api/users</p>
+
+          <p>/api/genres</p>
+
+          <p>/api/movies</p>
+
+          <p>/api/customers</p>
+
+          <p>/api/rentals</p>
+
+          <p>/api/returns</p>
+
+          Note: resources have relations. For example: movie has genre, rental
+          has movie and customer.
+        </div>
+        <br />
+
+        <h3>Routes</h3>
+        <hr />
+        <div>
+          <p>
+            POST /api/auth – store management login (token will be sent in
+            response)
+          </p>
+          <br />
+          <p>
+            POST /api/users – store management registration (token will be sent
+            in response header x-auth-token)
+          </p>
+
+          <p>
+            GET /api/users/me - current user (Protected route. Request header
+            x-auth-token should have correct token)
+          </p>
+          <br />
+          <p>GET /api/genres</p>
+
+          <p>GET /api/genres/:id</p>
+
+          <p>
+            POST /api/genres (Protected route. Request header x-auth-token
+            should have correct token)
+          </p>
+
+          <p>
+            PUT /api/genres/:id (Protected route. Request header x-auth-token
+            should have correct token)
+          </p>
+
+          <p>
+            DELETE /api/genres/:id (Protected route. Store management
+            administrator only)
+          </p>
+          <br />
+          <p>GET /api/movies</p>
+
+          <p>GET /api/movies/:id</p>
+
+          <p>
+            POST /api/movies (Protected route. Request header x-auth-token
+            should have correct token)
+          </p>
+
+          <p>
+            PUT /api/movies/:id (Protected route. Request header x-auth-token
+            should have correct token)
+          </p>
+
+          <p>
+            DELETE /api/movies/:id (Protected route. Request header x-auth-token
+            should have correct token)
+          </p>
+          <br />
+          <p>GET /api/customers</p>
+
+          <p>GET /api/customers/:id</p>
+
+          <p>
+            POST /api/customers (Protected route. Request header x-auth-token
+            should have correct token)
+          </p>
+
+          <p>
+            PUT /api/customers/:id (Protected route. Request header x-auth-token
+            should have correct token)
+          </p>
+
+          <p>
+            DELETE /api/customers/:id (Protected route. Request header
+            x-auth-token should have correct token)
+          </p>
+          <br />
+          <p>GET /api/rentals</p>
+
+          <p>GET /api/rentals/:id</p>
+
+          <p>
+            POST /api/rentals (Protected route. Request header x-auth-token
+            should have correct token)
+          </p>
+          <br />
+          <p>
+            POST /api/returns (Protected route. Request header x-auth-token
+            should have correct token)
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
